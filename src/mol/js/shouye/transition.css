@@ -1,0 +1,26 @@
+:global(.transitionWrapper-enter) {
+    top: 25px;
+    opacity: 0;
+    transition: ease 0.3s all 0s
+}
+ 
+:global(.transitionWrapper-enter.transitionWrapper-enter-active) {
+    top: 0;
+    opacity: 1;
+}
+:global(.transitionWrapper-leave) {
+    top: 0; 
+     opacity: 1;
+}
+:global(.transitionWrapper-leave.transitionWrapper-leave-active) {
+    top: 25px;
+     opacity: 0;
+     transition:ease 0.3s all 0s
+}
+ 
+:global(.transitionWrapper) {
+    position: relative;
+   
+   
+}
+

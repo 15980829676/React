@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>react</title>
+		<meta name="viewport" content=" initial-scale=1.0, minimum-scale = 1, maximum-scale = 1" />
+         <link rel="stylesheet" type="text/css" href="css/css.css">
+         <link rel="stylesheet" type="text/css" href="css/dpfl.css">
+         <link rel="stylesheet" type="text/css" href="css/dianpudingdan.css">
+         <link rel="stylesheet" type="text/css" href="css/wddp.css">
+         <script type="text/javascript">
+         (function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                if(clientWidth>=640){
+                    docEl.style.fontSize = '100px';
+                }else{
+                    docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                }
+            };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+         </script>
+	</head>
+	<body>
+	<div id="root"></div>  
+   <script type="text/javascript" src="/static/common.js" charset="utf-8"></script>  
+   <script type="text/javascript" src="/static/bundle.js" charset="utf-8"></script>
+	</body>
+</html>
